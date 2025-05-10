@@ -336,7 +336,7 @@ nav {
     margin-top: 39.5px;
     border: 2px solid #2C49FE;
     border-radius: 5px;
-    transition: background-color 150ms linear;
+    transition: all 150ms linear;
 }
 
 .card1-head {
@@ -374,6 +374,7 @@ nav {
 
 .card1:hover {
     background-color: #2C49FE;
+    scale: 1.05;
 }
 
 .card1:hover .card1-head,
@@ -420,6 +421,14 @@ nav {
     max-width: 920px;
     justify-content: space-between;
     padding-bottom: 46px;
+}
+
+.section3-box div{
+    transition: scale 150ms linear;
+}
+
+.section3-box div:hover{
+    scale: 1.05;
 }
 
 .section3-box-head {
@@ -576,6 +585,11 @@ input {
     color: #FFFFFF;
     border: 0;
     border-radius: 23px;
+    transition: scale 150ms linear;
+}
+
+.sign-up:hover{
+    scale: 1.025;
 }
 
 .section5-padding {
