@@ -46,6 +46,10 @@
 
 /* common properties */
 
+.w-100{
+    width: 100%;
+}
+
 .d-flex {
     display: flex;
 }
@@ -189,7 +193,7 @@ nav {
     color: #2C49FE;
 }
 
-.learnmore {
+.section1-learnmore {
     font-family: Poppins;
     font-weight: 400;
     font-size: var(--text-l);
@@ -199,7 +203,7 @@ nav {
     transition: opacity 150ms linear;
 }
 
-.learnmore:hover {
+.section1-learnmore:hover {
     opacity: 100%;
 }
 
@@ -435,4 +439,84 @@ nav {
     font-size: var(--text-m);
     line-height: 100%;
     color: #FFFFFF;
+}
+
+/* section 4 */
+
+.blue-line-3 {
+    width: 189px;
+    margin-bottom: 9px;
+}
+
+.section4-heading {
+    max-width: 338px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: var(--text-3xl);
+    line-height: 137%;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.section4-content {
+    max-width: 543px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: var(--text-s);
+    line-height: 100%;
+    color: #4D4D4D;
+    margin-bottom: 15px;
+}
+
+.section4-learnmore {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: var(--text-s);
+    line-height: 100%;
+    color: #000000;
+}
+
+.card2 {
+    max-width: 339px;
+    padding: 10px 12px 24px;
+    margin-right: 30px;
+    transition: box-shadow 200ms linear;
+    transition: scale 200ms linear;
+    border-radius: 10px;
+}
+
+.card2:hover {
+    box-shadow: 2px 9px 32px 0px #0000000F;
+    scale: 1.05;
+}
+
+.card2-date {
+    margin-top: 13px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: var(--text-xs);
+    line-height: 100%;
+    color: #4D4D4D;
+}
+
+.card2-head {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: var(--text-xl);
+    line-height: 100%;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.card2-content {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: var(--text-s);
+    line-height: 100%;
+    color: #4D4D4D;
+}
+
+.section4-padding {
+    padding-top: 134px;
+    padding-bottom: 163px;
 }
