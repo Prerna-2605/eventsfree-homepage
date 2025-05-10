@@ -46,8 +46,12 @@
 
 /* common properties */
 
-.w-100{
+.w-100 {
     width: 100%;
+}
+
+.w-49 {
+    width: 49%;
 }
 
 .d-flex {
@@ -454,7 +458,6 @@ nav {
     font-weight: 700;
     font-size: var(--text-3xl);
     line-height: 137%;
-    color: #000000;
     margin-bottom: 12px;
 }
 
@@ -473,7 +476,6 @@ nav {
     font-weight: 700;
     font-size: var(--text-s);
     line-height: 100%;
-    color: #000000;
 }
 
 .card2 {
@@ -504,7 +506,6 @@ nav {
     font-weight: 500;
     font-size: var(--text-xl);
     line-height: 100%;
-    color: #000000;
     margin-bottom: 5px;
 }
 
@@ -519,4 +520,66 @@ nav {
 .section4-padding {
     padding-top: 134px;
     padding-bottom: 163px;
+}
+
+/* section 5 */
+
+.section5-img {
+    width: 80%;
+}
+
+.section5-heading {
+    max-width: 543px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: var(--text-3xl);
+    line-height: 100%;
+    margin-bottom: 7px;
+}
+
+.section5-content {
+    max-width: 543px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: var(--text-s);
+    line-height: 100%;
+    color: #4D4D4D;
+    margin-bottom: 15px;
+}
+
+.form-head {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 100%;
+    margin-bottom: 14px;
+}
+
+.common{
+    border-radius:5px;
+    border: 1px solid #999999;
+    padding-left: 17px;
+}
+
+input {
+    height: 42px;
+    margin-bottom: 16px;
+}
+
+.textarea {
+    height: 124px;
+    margin-bottom: 37px;
+    resize: none;
+}
+
+.sign-up {
+    height: 46px;
+    background-color: #2C49FE;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: var(--text-s);
+    line-height: 150%;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 23px;
 }
