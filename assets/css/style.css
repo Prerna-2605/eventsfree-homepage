@@ -145,7 +145,6 @@
     font-size: var(--text-s);
     line-height: 150%;
     margin-right: 60px;
-    transition: box-shadow 150ms linear;
 }
 
 .logout:hover {
@@ -217,12 +216,12 @@ nav {
 }
 
 .blue-box {
-    background-image: url(/assets/images/blue-box.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #2C49FE;
+    opacity: 70%;
     max-width: 962px;
     height: 108px;
-    padding: 19px 23px;
+    padding: 19px 25px;
+    border-radius: 100px;
 }
 
 .blue-box-head {
@@ -231,6 +230,7 @@ nav {
     font-size: var(--text-l);
     line-height: 100%;
     color: #FFFFFF;
+    opacity: 100%;
     margin-bottom: 4px;
 }
 
@@ -240,10 +240,10 @@ nav {
     font-size: var(--text-xs);
     line-height: 100%;
     color: #FFFFFF;
-    opacity: 70%;
+    opacity: 100%;
 }
 
-.mr-17 {
+.svg-mr {
     margin-right: 17px;
 }
 
@@ -256,14 +256,15 @@ nav {
     font-size: var(--text-l);
     line-height: 100%;
     color: #2C49FE;
+    opacity: 100%;
     border: 0;
     border-radius: 150px;
     transition: all 150ms linear;
 }
 
 .go-check:hover {
-    background-color: #2C49FE;
-    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    scale: 1.05;
 }
 
 .line1,
@@ -273,19 +274,7 @@ nav {
     border: 2px solid #FFFFFF;
 }
 
-.line1 {
-    right: -65%;
-}
-
-.line2 {
-    right: -120%;
-}
-
-.line3 {
-    right: -50%;
-}
-
-.pb-104 {
+.section1-pb {
     padding-bottom: 104px;
 }
 
@@ -295,7 +284,7 @@ nav {
 
 /* section 2 */
 
-.pt-137 {
+.section2-pt {
     padding-top: 137px;
 }
 
@@ -344,6 +333,7 @@ nav {
     max-width: 260px;
     height: 198px;
     padding: 0 20px 17px;
+    margin-top: 39.5px;
     border: 2px solid #2C49FE;
     border-radius: 5px;
     transition: background-color 150ms linear;
@@ -378,7 +368,7 @@ nav {
     margin-right: 30px;
 }
 
-.mb-73 {
+.section2-mb {
     margin-bottom: 73px;
 }
 
@@ -487,7 +477,6 @@ nav {
     max-width: 339px;
     padding: 10px 12px 24px;
     margin-right: 30px;
-    transition: box-shadow 200ms linear;
     transition: scale 200ms linear;
     border-radius: 10px;
 }
@@ -704,6 +693,41 @@ input {
     transform: translateX(-50%);
 }
 
+.ul-margin {
+    margin-right: 100px;
+}
+
+@media (max-width:1024px) {
+    :root {
+        --text-2xs: 10px;
+        --text-xs: 11px;
+        --text-s: 13px;
+        --text-m: 15px;
+        --text-l: 17px;
+        --text-xl: 22px;
+        --text-2xl: 33px;
+        --text-3xl: 45px;
+        --text-4xl: 60px;
+    }
+
+    .card {
+        margin-bottom: 0;
+    }
+
+    .card1 {
+        margin-right: 30px;
+        height: 150px;
+    }
+
+    .circle {
+        top: -29%;
+    }
+
+    .blue-line-1 {
+        right: 16.5%;
+    }
+}
+
 @media (max-width:961px) {
 
     .flex-row-reverse {
@@ -720,14 +744,14 @@ input {
         justify-content: center;
         position: absolute;
         top: 0;
-        right: -100%;
+        right: -400px;
         z-index: 1;
         transition: right 400ms linear;
     }
 
     .menu-icon {
-        width: 45px;
-        height: 40px;
+        width: 42px;
+        height: 37px;
         z-index: 2;
         background-color: unset;
         border: 0;
@@ -761,7 +785,202 @@ input {
         transform-origin: left;
     }
 
-        .activeNavBar .menu-icon{
-            height: 37px;
-        }
+    .activeNavBar .menu-icon {
+        height: 34px;
+    }
+
+    .flex-md-column {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:769px) {
+    :root {
+        --text-2xs: 8px;
+        --text-xs: 9px;
+        --text-s: 10px;
+        --text-m: 12px;
+        --text-l: 14px;
+        --text-xl: 19px;
+        --text-2xl: 30px;
+        --text-3xl: 42px;
+        --text-4xl: 53px;
+    }
+
+    nav {
+        margin-bottom: 100px;
+    }
+
+    .button-box {
+        margin-bottom: 70px;
+    }
+
+    .section1-pb {
+        padding-bottom: 70px;
+    }
+
+    .section2-pt {
+        padding-top: 80px;
+    }
+
+    .section4-padding {
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+
+    .flex-m-column {
+        flex-direction: column;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .w-md-90 {
+        max-width: 90%;
+    }
+
+    .section4-row-gap {
+        gap: 30px;
+    }
+
+    .section3-content {
+        max-width: 708px;
+    }
+}
+
+@media (max-width:687px) {
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    .flex-sm-column {
+        flex-direction: column;
+    }
+
+    .card1 {
+        margin-right: auto;
+    }
+
+    .svg-mb {
+        margin-bottom: 13px;
+    }
+
+    .date-mb {
+        margin-bottom: 18px;
+    }
+
+    .go-check {
+        width: 150px;
+        height: 50px;
+    }
+}
+
+@media (max-width:591px) {
+    :root {
+        --text-2xs: 8px;
+        --text-xs: 9px;
+        --text-s: 10px;
+        --text-m: 10px;
+        --text-l: 12px;
+        --text-xl: 16px;
+        --text-2xl: 27px;
+        --text-3xl: 39px;
+        --text-4xl: 48px;
+    }
+
+    .blue-line-1 {
+        width: 60%;
+    }
+
+    .col-mq-12 {
+        width: 100%;
+    }
+
+    .d-mq-none {
+        display: none;
+    }
+
+    .get-started {
+        width: 140px;
+        height: 42px;
+    }
+
+    .line1,
+    .line2,
+    .line3 {
+        height: 65px;
+    }
+
+    nav {
+        margin-bottom: 40px;
+    }
+
+    .section4-padding {
+        padding-bottom: 40px;
+    }
+
+    .section6 {
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width:511px) {
+    .card1 {
+        margin-left: auto;
+    }
+
+    .flex-mq-column {
+        flex-direction: column;
+    }
+
+    .flex-mq-row {
+        flex-direction: row;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    .blue-box {
+        height: 100%;
+        gap: 10px;
+    }
+
+    .svg-mr {
+        margin-right: 150px;
+    }
+
+    .line1,
+    .line2,
+    .line3 {
+        display: none;
+    }
+}
+
+@media (max-width:376px) {
+    :root {
+        --text-2xs: 6px;
+        --text-xs: 7px;
+        --text-s: 8px;
+        --text-m: 8px;
+        --text-l: 9px;
+        --text-xl: 13px;
+        --text-2xl: 24px;
+        --text-3xl: 36px;
+        --text-4xl: 40px;
+    }
+}
+
+@media (max-width:321px) {
+    .svg-mr {
+        margin-right: 110px;
+    }
+}
+
+@media (min-width:961px) {
+    .menu-icon {
+        display: none;
+    }
 }
