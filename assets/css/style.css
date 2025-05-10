@@ -54,6 +54,10 @@
     width: 49%;
 }
 
+.overflow {
+    overflow: hidden;
+}
+
 .d-flex {
     display: flex;
 }
@@ -140,6 +144,7 @@
     font-weight: 600;
     font-size: var(--text-s);
     line-height: 150%;
+    margin-right: 60px;
     transition: box-shadow 150ms linear;
 }
 
@@ -697,4 +702,66 @@ input {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media (max-width:961px) {
+
+    .flex-row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .menu-list {
+        background-color: #2C49FE;
+        width: 400px;
+        height: 600px;
+        flex-direction: column;
+        gap: 70px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        z-index: 1;
+        transition: right 400ms linear;
+    }
+
+    .menu-icon {
+        width: 45px;
+        height: 40px;
+        z-index: 2;
+        background-color: unset;
+        border: 0;
+    }
+
+    .menu-icon span {
+        width: 100%;
+        height: 4px;
+        background-color: #FFFFFF;
+        border-radius: 50px;
+        transition: all 200ms linear;
+    }
+
+    .menu-list.show {
+        right: 0;
+    }
+
+    .activeNavBar .menu-icon span:first-child {
+        transform: rotate(45deg);
+        transform-origin: left;
+    }
+
+    .activeNavBar .menu-icon span:nth-child(2) {
+        margin-left: -40px;
+        display: none;
+        pointer-events: none;
+    }
+
+    .activeNavBar .menu-icon span:last-child {
+        transform: rotate(-45deg);
+        transform-origin: left;
+    }
+
+        .activeNavBar .menu-icon{
+            height: 37px;
+        }
 }

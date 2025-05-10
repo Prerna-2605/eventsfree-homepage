@@ -11,15 +11,15 @@
 <body>
     <!-- section1 -->
 
-    <section class="section1">
+    <section class="section1 relative overflow">
         <nav>
             <div class="container d-flex justify-space-btw">
                 <a href="" class="logo d-flex y-center">
                     <img src="./assets/images/logo.svg" alt="logo">
                     Events<span>Free</span>
                 </a>
-                <div class="d-flex y-center">
-                    <button class="menu-icon" onclick="menuList()">
+                <div class="d-flex y-center flex-row-reverse">
+                    <button class="menu-icon d-flex flex-column justify-space-btw" onclick="menuIcon()">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -131,6 +131,10 @@
                 <div class="col-6">
                     <img src="./assets/images/tv.png" alt="tv" class="tv">
                 </div>
+
+                <!--  -->
+
+
                 <div class="col-6">
                     <div class="card">
                         <img src="./assets/images/blue-line2.png" alt="blue-line-2" class="blue-line-2">
@@ -464,6 +468,13 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function menuIcon() {
+            document.querySelector('.menu-list').classList.toggle('show');
+            document.querySelector('nav').classList.toggle('activeNavBar');
+        }
+    </script>
 </body>
 
 </html>
