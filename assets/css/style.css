@@ -973,6 +973,12 @@ input {
     }
 }
 
+@media (max-width:426px) {
+    .menu-list{
+        width: 250px;
+    }
+}
+
 @media (max-width:376px) {
     :root {
         --text-2xs: 6px;
